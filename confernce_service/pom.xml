@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.zakaria</groupId>
-	<artifactId>confernce</artifactId>
+	<artifactId>confernce_service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>confernce</name>
 	<description>confernce</description>
@@ -55,6 +55,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
 
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -64,7 +68,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<optional>true</optional>
+			<version>1.18.34</version> <!-- ✅ latest stable as of Oct 2025 -->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -94,6 +98,7 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.34</version> <!-- ✅ latest stable as of Oct 2025 -->
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
